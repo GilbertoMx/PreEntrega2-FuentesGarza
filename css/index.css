@@ -116,14 +116,34 @@ main .boton:hover {
     background-color: #1C6758;
 }
 
-/* estilos del texto */
-.texto1, .texto10 {
+/* estilos generales del texto */
+.texto1, .texto2, .texto3, .texto4, .texto5, .texto6, .texto7, .texto8 {
     font-family: 'Playfair Display', serif;    
     text-align: justify;
-    width: 35rem;    
+    width: 35rem;
     height: 27rem;
-    font-size: 1rem;
+    font-size: 1rem;    
+}
+
+/* estilos particulares del texto1 */
+.texto1 {
     margin-bottom: 3rem;
+}
+
+/* estilos particulares del texto2, texto3 y texto4 */
+.texto2, .texto3, .texto4 {    
+    height: 12rem;
+    margin-bottom: 1rem;    
+}
+
+/* estilos particulares del texto7 */
+.texto7 {
+    height: 18rem;
+}
+
+/* estilos particulares del texto8 */
+.texto8 {
+    height: 15rem;
 }
 
 /* estilos del texto de información */
@@ -188,6 +208,7 @@ footer .mih4 {
         height: 6rem;
         border-radius: 30px;
         margin: 0.5rem;
+        margin-top: 1rem;
     }
 
     /* estilos nuevos del main */
@@ -245,7 +266,7 @@ footer .mih4 {
     margin-left: 1.8rem;
     }
 
-    /* estilos h1 del header */
+    /* estilos nuevos h1 del header */
     .mih1 {
         font-size: 6rem;        
     }
@@ -296,5 +317,3 @@ footer .mih4 {
         font-family: 'Playfair Display', serif;
     }
 }
-
-
