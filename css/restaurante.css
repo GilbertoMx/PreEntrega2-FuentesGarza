@@ -5,7 +5,6 @@
     box-sizing: border-box;
 }
 
-
 /* estilos html */
 html {
     background-color: #000;
@@ -26,20 +25,32 @@ header {
     background-color: #B1D7B4;    
 }
 
-
-/* estilos logotipo del header */
-.logo-hotel {    
-    width: 7rem;
-    height: 7rem;
-    border-radius: 30px;
-    margin: 0.5rem;
+/* estilos header */
+header nav {
+    margin-left: 10rem;
+    padding-bottom: 4rem;
 }
 
+/* estilos pseudo clase a:hover */
+header nav ul li a:hover{
+    transition: 0.5s;    
+    background-color: #1C6758;        
+    border-radius: 5px;
+    font-weight: bold;       
+    box-shadow: 1px 1px black;
+}
+
+/* estilos del logotipo del header */
+.logo-hotel {
+    display: none;
+}
+
+
 /* estilos h1 del header */
-.mih1 {
-    color: #472D2D;
+.mih1 {    
+    color: #1C6758;
     text-align: center;
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-family: 'Bebas Neue', cursive;    
 }
 
@@ -53,17 +64,6 @@ main{
     background-color: #F7F6DC;    
 }
 
-main .section1 {
-    width: 100%;
-    background-color: #F7F6DC;
-    
-}
-
-main .section2 {
-    width: 100%;    
-    background-color: #F7F6DC;    
-}
-
 /* estilos del video del main */
 .video1 {
     width: 35rem;
@@ -71,19 +71,24 @@ main .section2 {
     margin-right: 1.4rem;
 }
 
-/* estilos h2 y h3 del header */
+/* estilos de los h2 y h3 */
 .mih2, .mih3 {
-    color: #472D2D;
     text-align: center;
     font-size: 2rem;    
     font-family: 'Bebas Neue', cursive;
     margin: 1rem;
 }
 
+/* estilos del h3 */
+.mih3 {
+    font-size: 1.5rem;
+    color: #EF5B0C;
+}
+
 /* estilos de imagenes */
 section img {
     width: 30rem;
-    height: 20rem;    
+    height: 20rem;
     margin-left: 1rem;
     margin-top: 2rem;
 }
@@ -112,13 +117,16 @@ main .boton:hover {
 }
 
 /* estilos del texto */
-.texto1, .texto2, .texto3, .texto4, .texto5, .texto6, .texto7 .texto8 {
-    font-family: 'Playfair Display', serif;
-    text-align: justify;
-    width: 35rem;    
-    height: 27rem;
-    font-size: 1rem;
-    margin-bottom: 3rem;
+.texto1, .texto2, .texto3, .texto4, .texto5, .texto6, .texto7, .texto8 {
+    font-family: 'Playfair Display', serif;    
+    text-align: justify;    
+    font-size: 1rem;    
+}
+
+.texto7 {
+    margin-bottom: 1rem;
+    width: 35rem;
+    height: 20rem;
 }
 
 /* estilos del texto de información */
@@ -126,7 +134,7 @@ main .boton:hover {
     font-family: 'Bebas Neue', cursive;
     text-align: center;
     width: 35rem;    
-    height: 25rem;
+    height: 20rem;
     font-size: 1rem;
     margin: 2rem;
 }
@@ -172,16 +180,20 @@ footer .mih4 {
 /* media queries */
 @media screen and (min-width: 600px){
 
-    /* estilos pseudo clase a:hover */
-    header nav ul li a:hover{
-        transition: 0.5s;
-        color: #FCF8E8;
-        background-color: #1C6758;        
-        border-radius: 5px;
-        font-weight: bold;       
-        box-shadow: 1px 1px black;
+    /* estilos nuevos del header */
+    header nav {
+        margin-left: 4rem;
     }
 
+    /* estilos nuevos del logotipo del header */
+    .logo-hotel {
+        display: flex;
+        width: 6rem;
+        height: 6rem;
+        border-radius: 30px;
+        margin: 0.5rem;
+    }
+    
     /* estilos nuevos del main */
     main {
         display: grid;
@@ -204,6 +216,9 @@ footer .mih4 {
 
     main .texto7 {
         grid-area: texto7;
+        margin-bottom: 0rem;
+        width: 38rem;
+        height: 20rem;
     }
 
     main .img10 {
@@ -211,14 +226,12 @@ footer .mih4 {
     }
     
     main .informacion {
-        grid-area: informacion;        
-        padding-left: 10rem;
+        grid-area: informacion;
         font-size: 1.4rem;
     }
 
     main .formulario {
-        grid-area: formulario;
-        padding-left: 10rem;
+        grid-area: formulario;        
     }
 
     /* estilos de imagenes */
@@ -233,14 +246,19 @@ footer .mih4 {
     margin-left: 1.8rem;
     }
 
-    /* estilos h1 del header */
+    /* estilos nuevos del h1 del header */
     .mih1 {
-        font-size: 4rem;        
+        font-size: 6rem;        
     }
 
-    /* estilos h2 del header */
+    /* estilos nuevos del h2 del header */
     .mih2 {
         font-size: 5rem;
+    }
+
+    /* estilos nuevos del h3 del header */
+    .mih3 {
+        font-size: 3rem;
     }
 
     /* estilos nuevos del footer */
