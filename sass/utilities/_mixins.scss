@@ -1,0 +1,8 @@
+/* estilos generales del texto */
+@mixin texto {
+    font-family: $fuente-pd;  
+    text-align: justify;
+    width: 35rem;
+    height: 27rem;
+    font-size: 1rem;
+}

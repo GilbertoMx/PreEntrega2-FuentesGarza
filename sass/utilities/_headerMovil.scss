@@ -1,0 +1,27 @@
+header {
+	display: flex;
+	background-color: $verde-claro;
+	nav {
+		margin-left: 10rem;
+		ul {
+			li {
+				a {
+					&:hover {
+						@extend %enlacehover;
+					}
+				}
+			}
+		}
+	}
+}
+
+.logo-hotel {
+	display: none;
+}
+
+.mih1 {
+	color: $verde-fuerte;
+	text-align: center;
+	font-size: 2.5rem;
+	font-family: $fuente-bn;
+}

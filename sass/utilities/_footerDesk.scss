@@ -1,0 +1,25 @@
+    footer {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 2fr 1fr;
+		grid-template-areas: "iconos subscripcion" "mih4 mih4";
+		.iconos {
+			grid-area: iconos;
+		}
+		.subscripcion {
+			grid-area: subscripcion;
+			margin: 0.5rem 0.5rem;
+			font-size: 0.9rem;
+			legend {
+				font-weight: bold;
+				font-size: 1rem;
+			}
+		}
+		.mih4 {
+			grid-area: mih4;
+			display: block;
+			text-align: center;
+			font-size: 15px;
+			font-family: 'Playfair Display', serif;
+		}
+	}

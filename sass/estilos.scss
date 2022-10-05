@@ -1,0 +1,97 @@
+@import "utilities/variables";
+@import "utilities/reset";
+@import "utilities/mixins";
+@import "utilities/extend";
+@import "utilities/headerMovil.scss";
+
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	flex-wrap: wrap;
+	background-color: $fondo-principal;
+	.boton {
+		@extend %boton;
+		&:hover {
+			transition: 0.5s;
+			color: $blanco;
+			background-color: $verde-fuerte;
+		}
+	}
+}
+.video1 {
+	width: 35rem;
+	height: 20rem;
+	margin-right: 1.4rem;
+}
+
+.mih2 {
+	@extend %haches;
+}
+
+.mih3 {
+	@extend %haches;
+	color: $resalta-letra;
+	font-size: 1.5rem;
+}
+section {
+	img {
+		@extend %imagenes;
+	}
+}
+
+.texto1 {
+	@include texto;
+	margin-bottom: 3rem;
+}
+
+.texto2 {
+	@include texto;
+	height: 12rem;
+	margin-bottom: 1rem;
+}
+.texto3 {
+	@include texto;
+	height: 12rem;
+	margin-bottom: 1rem;
+}
+.texto4 {
+	@include texto;
+	height: 12rem;
+	margin-bottom: 1rem;
+}
+.texto5 {
+	@include texto;
+	height: 12rem;
+}
+.texto6 {
+	@include texto;
+	height: 12rem;
+}
+.texto7 {
+	@include texto;
+	height: 18rem;
+}
+.texto8 {
+	@include texto;
+	height: 15rem;
+}
+
+.informacion {
+	@extend %informacion;
+}
+.formulario {
+	@extend %formulario;
+}
+
+main {
+	article {
+		p {
+			span {
+				color: $resalta-letra;
+				font-weight: bold;
+			}
+		}
+	}
+}
+@import "utilities/footerMovil";

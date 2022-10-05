@@ -1,109 +1,57 @@
-/* estilos de imagenes */
 section img {
-    width: 35rem;
-    height: 20rem;
-    padding-bottom: 2rem;
-}
+  width: 35rem;
+  height: 20rem;
+  padding-bottom: 2rem; }
 
-/* media queries */
-@media screen and (min-width: 600px){
-
-    /* estilos nuevos del header */
-    header nav {
-        margin-left: 4rem;        
-    }
-
-    /* estilos nuevos del logotipo del header */
-    .logo-hotel {
-        display: flex;
-        width: 6rem;
-        height: 6rem;
-        border-radius: 30px;
-        margin: 0.5rem;
-        margin-top: 1rem;
-    }
-
-    /* estilos nuevos del main */
-    main {
-        display: grid;
-        grid-template-columns: 2fr;
-        grid-template-rows: 0.1fr 0.1fr 0.1fr;
-        grid-template-areas:
-        "mih2"
-        "mih3"
-        "section-img";
-    }
-
+@media screen and (min-width: 640px) {
+  .logo-hotel {
+    display: block;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 30px;
+    margin: 0.5rem;
+    margin-top: 2rem; }
+  header nav h1 {
+    margin-left: 10rem; }
+  header nav ul {
+    margin-left: 15rem; }
+  main {
+    display: grid;
+    grid-template-columns: 2fr;
+    grid-template-rows: 0.1fr 0.1fr 0.1fr;
+    grid-template-areas: "mih2" "mih3" "section-img"; }
     main .mih2 {
-        grid-area: mih2;        
-    }
-
+      grid-area: mih2; }
     main .section-img {
-        grid-area: section-img;
-        padding-left: 0.7rem;
-    }
-    
-    /* estilos de imagenes */
-    section img {
-        width: 80rem;
-        height: 40rem;
-    }
-
-    /* estilos nuevos h1 del header */
-    .mih1 {
-        font-size: 6rem;        
-    }
-
-    /* estilos nuevos del h2 */
-    .mih2 {
-        font-size: 5rem;
-    }
-
-    /* estilos nuevos del h3 */
-    .mih3 {
-        font-size: 3rem;
-    }
-
-    /* estilos nuevos del footer */
-    footer {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 2fr 1fr;
-        grid-template-areas:
-        "iconos subscripcion"
-        "h4 h4"
-    }
-
-    /* estilos del los iconos del footer */
+      grid-area: section-img;
+      padding-left: 0.7rem; }
+  section img {
+    margin-left: 5rem;
+    width: 107rem;
+    height: 50rem; }
+  .mih1 {
+    font-size: 6rem; }
+  .mih2 {
+    font-size: 5rem; }
+  .mih3 {
+    font-size: 3rem; }
+  footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr 1fr;
+    grid-template-areas: "iconos subscripcion" "mih4 mih4"; }
     footer .iconos {
-        grid-area: iconos;
-    }
-
-    /* estilos de la subscripcion del footer */
+      grid-area: iconos; }
     footer .subscripcion {
-        grid-area: subscripcion;
-        margin: 0.5rem 0.5rem;
-        font-size: 0.9rem;
-    }
-
-    footer .subscripcion legend {
-        font-weight:bold;
-        font-size: 1rem;
-    }
-
-    /* estilos del h3 del footer */
+      grid-area: subscripcion;
+      margin: 0.5rem 0.5rem;
+      font-size: 0.9rem; }
+      footer .subscripcion legend {
+        font-weight: bold;
+        font-size: 1rem; }
     footer .mih4 {
-        grid-area: h4;
-        display: block;
-        text-align: center;
-        font-size: 15px;
-        font-family: 'Playfair Display', serif;
-    }
-}
-
-
-
-
-.texto1, .texto2, .texto3, .texto4, .texto5, .texto6, .texto7, .texto8 {
-    border: 1px solid black;
-}
+      grid-area: mih4;
+      display: block;
+      text-align: center;
+      font-size: 15px;
+      font-family: 'Playfair Display', serif; } }

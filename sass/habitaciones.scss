@@ -1,0 +1,64 @@
+@media screen and (min-width: 640px) {
+
+	@import "utilities/headerDesk";
+	
+	main {
+		display: grid;
+		grid-template-columns: 0.5fr 0.5fr;
+		grid-template-rows: 0.2fr 0.2fr 0.2fr 0.2fr;
+		grid-template-areas: "mih2 mih2" "img5 texto2" "texto3 img6" "img7 texto4";
+		padding-left: 1.5rem;
+		justify-content: space-between;
+		.mih2 {
+			grid-area: mih2;
+		}
+		.texto2 {
+			grid-area: texto2;
+			margin-left: 3rem;
+		}
+		.img5 {
+			grid-area: img5;
+			margin-bottom: 2rem;
+			margin-left: 10rem;
+		}
+		.texto3 {
+			grid-area: texto3;
+			margin-left: 12rem;
+		}
+		.img6 {
+			grid-area: img6;
+			margin-bottom: 2rem;
+		}
+		.texto4 {
+			grid-area: texto4;
+			margin-left: 3rem;
+		}
+		.img7 {
+			grid-area: img7;
+			margin-bottom: 2rem;
+			margin-left: 10rem;
+		}
+		.boton {
+			margin: 0 auto;
+		}
+	}
+	section {
+		img {
+			width: 40rem;
+			height: 25rem;
+			margin-left: 0rem;
+			margin-top: 0rem;
+		}
+	}
+	.mih1 {
+		font-size: 6rem;
+	}
+	.mih2 {
+		font-size: 5rem;
+	}
+	.mih3 {
+		font-size: 3rem;
+	}
+
+	@import "utilities/footerDesk";
+}

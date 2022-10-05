@@ -1,0 +1,22 @@
+
+/* estilos generales del footer */
+footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: $naranja-pp;    
+	/* estilos del los iconos del footer */
+	.iconos {
+		padding: 1rem;
+	}    
+	/* estilos de la subscripcion del footer */
+	.subscripcion {
+		padding: 1rem;
+		border-radius: 20px;
+		border: 1px solid $negro;
+	}
+	/* estilos parrafos del footer */
+	.mih4 {
+		display: none;
+	}
+}

@@ -1,0 +1,66 @@
+@media screen and (min-width: 640px) {
+
+	@import "utilities/headerDesk";
+	
+	main {
+		display: grid;
+		grid-template-columns: 0.5fr 0.5fr;
+		grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr;
+		grid-template-areas: "mih2 mih2" "texto5 img8" "img9 texto6" "informacion formulario";
+		padding-left: 1.5rem;
+		justify-content: space-between;
+		.mih2 {
+			grid-area: mih2;
+		}
+		.texto5 {
+			grid-area: texto5;
+			height: 15rem;
+			margin-left: 10rem;
+		}
+		.img8 {
+			grid-area: img8;
+		}
+		.texto6 {
+			grid-area: texto6;
+			height: 15rem;
+		}
+		.img9 {
+			grid-area: img9;
+			margin-left: 10rem;
+		}
+		.informacion {
+			grid-area: informacion;
+			margin-left: 15rem;
+			font-size: 1.4rem;
+			height: 35rem;
+			margin-top: 2rem;
+		}
+		.formulario {
+			grid-area: formulario;
+			margin-bottom: 0rem;
+			margin-right: 20rem;
+			padding-left: 0rem;
+			padding-right: 0rem;
+		}
+		.boton {
+			margin-left: 10rem;
+		}
+	}
+	section {
+		img {
+			width: 35rem;
+			height: 20rem;
+		}
+	}
+	.mih1 {
+		font-size: 6rem;
+	}
+	.mih2 {
+		font-size: 5rem;
+	}
+	.mih3 {
+		font-size: 3rem;
+	}
+
+	@import "utilities/footerDesk";
+}
