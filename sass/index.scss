@@ -1,60 +1,141 @@
-@media screen and (min-width: 640px) {
+@import "utilities/variables";
+@import "utilities/mixins";
 
-	@import "utilities/headerDesk";
+@media screen and (min-width: 993px){
 
-	main {
-		display: grid;
-		grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr;
-		grid-template-rows: 0.5fr 2fr 1.5fr;
-		grid-template-areas: "mih2 mih2 mih2 mih2" "video1 video1 texto1 texto1" "img1 img2 img3 img4";
-		padding-left: 1.5rem;
-		justify-content: space-between;
-		.mih2 {
-			grid-area: mih2;
-		}
-		.video1 {
-			grid-area: video1;
-			margin-right: 0rem;
-			margin-left: 10rem;
-		}
-		.texto1 {
-			grid-area: texto1;
-			width: 55rem;
-			height: 25rem;
-		}
-		.img1 {
-			grid-area: img1;
-		}
-		.img2 {
-			grid-area: img2;
-		}
-		.img3 {
-			grid-area: img3;
-		}
-		.img4 {
-			grid-area: img4;
-		}
-		.boton {
-			margin-left: 6rem;
-		}
-	}
-	section {
-		img {
-			width: 25rem;
-			height: 15rem;
-			margin-left: 1.5rem;
-		}
-	}
-	.mih1 {
-		font-size: 6rem;
-	}
-	.mih2 {
-		font-size: 5rem;
-	}
-	.mih3 {
-		font-size: 3rem;
-	}
+    @import "utilities/headerDesk";
 
-	@import "utilities/footerDesk";
+    main {
+        display: grid;
+        justify-content: space-between;
+        padding-left: 1.5rem;
+        grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr;
+        grid-template-rows: 0.5fr 2fr 1.5fr;
+        grid-template-areas: "mih2 mih2 mih2 mih2" "video1 video1 texto1 texto1" "img1 img2 img3 img4";
+        .mih2 {
+            grid-area: mih2;
+            font-size: 5rem;
+        }
+        .video1 {
+            grid-area: video1;
+            margin-left: 10rem;
+            margin-top: 4rem;
+        }
+        .texto1 {
+            grid-area: texto1;
+            @include size-texto(800px, 400px);
+        }
+        .img1 {
+            grid-area: img1;
+        }
+        .img2 {
+            grid-area: img2;
+        }
+        .img3 {
+            grid-area: img3;
+        }
+        .img4 {
+            grid-area: img4;
+        }
+        article {
+            .t1p2 {
+                display: block;
+            }
+            .t1p3 {
+                display: block;
+            }
+            .mih3 {
+                font-size: 3rem;
+            }
+        }
+        div {
+            iframe {
+                @include size-imagenes(600px, 350px);                
+            }
+        }
+        section {
+            img {
+                @include size-imagenes(400px, 240px);                
+                margin-left: 1.5rem;
+            }
+            .boton {
+                margin-left: 6rem;
+            }
+        }
+    }
+
+    @import "utilities/footerDesk";
 }
 
+@media (min-width: 768px) and (max-width: 992px){
+
+    @import "utilities/headerTablet";
+    
+    main {
+        display: grid;
+        justify-content: space-between;
+        padding-left: 1.5rem;
+        grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr;
+        grid-template-rows: 0.5fr 2fr 1.5fr;
+        grid-template-areas: "mih2 mih2 mih2 mih2" "video video texto1 texto1" "img1 img1 img2 img2" "img3 img3 img4 img4";
+        .mih2 {
+            grid-area: mih2;
+            font-size: 4rem;
+        }
+        video {
+            grid-area: video;
+        }
+        .texto1 {
+            grid-area: texto1;
+            @include size-texto(500px, 350px);
+            font-size: 0.8rem;
+            margin-left: 1rem;
+            margin-right: 1rem;
+            margin-top: 1rem;
+            margin-bottom: 0rem;
+        }
+        .img1 {
+            grid-area: img1;
+            margin-left: 1rem;
+        }
+        .img2 {
+            grid-area: img2;
+            margin-left: 5rem;
+        }
+        .img3 {
+            grid-area: img3;
+            margin-left: 1rem;
+        }
+        .img4 {
+            grid-area: img4;
+            margin-left: 5rem;
+        }
+        article {
+            .t1p2 {
+                display: block;
+            }
+            .t1p3 {
+                display: none;
+            }
+            .mih3 {
+                font-size: 2rem;
+            }
+        }
+        div {
+            iframe {
+                @include size-imagenes(400px, 300px);
+            }
+        }
+        section {
+            img {
+                @include size-imagenes(400px, 250px);
+                margin: 0;
+            }
+            .boton {
+                margin-left: 5rem;
+            }
+        }
+    }
+
+    @import "utilities/footerTablet";
+}

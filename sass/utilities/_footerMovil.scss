@@ -1,21 +1,21 @@
-
-/* estilos generales del footer */
 footer {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	background-color: $naranja-pp;    
-	/* estilos del los iconos del footer */
+	background-color: $color-footer;
 	.iconos {
 		padding: 1rem;
-	}    
-	/* estilos de la subscripcion del footer */
+	}	
 	.subscripcion {
 		padding: 1rem;
 		border-radius: 20px;
-		border: 1px solid $negro;
-	}
-	/* estilos parrafos del footer */
+		border: 1px solid $color-negro;		
+		legend {
+			font-family: $fuente-pd;
+			font-weight: bold;
+			font-size: 1rem;
+		}
+	}	
 	.mih4 {
 		display: none;
 	}

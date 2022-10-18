@@ -10,88 +10,103 @@ main {
 	align-items: center;
 	flex-wrap: wrap;
 	background-color: $fondo-principal;
-	.boton {
-		@extend %boton;
-		&:hover {
-			transition: 0.5s;
-			color: $blanco;
-			background-color: $verde-fuerte;
+	overflow-x: hidden;
+	div {		
+		iframe {
+			@include size-video(500px, 300px);			
+			border-radius: 20px;
 		}
+	}	
+	.mih2 {
+		@extend %haches;
+		font-size: 4rem;
 	}
-}
-.video1 {
-	width: 35rem;
-	height: 20rem;
-	margin-right: 1.4rem;
-}
-
-.mih2 {
-	@extend %haches;
-}
-
-.mih3 {
-	@extend %haches;
-	color: $resalta-letra;
-	font-size: 1.5rem;
-}
-section {
-	img {
-		@extend %imagenes;
-	}
-}
-
-.texto1 {
-	@include texto;
-	margin-bottom: 3rem;
-}
-
-.texto2 {
-	@include texto;
-	height: 12rem;
-	margin-bottom: 1rem;
-}
-.texto3 {
-	@include texto;
-	height: 12rem;
-	margin-bottom: 1rem;
-}
-.texto4 {
-	@include texto;
-	height: 12rem;
-	margin-bottom: 1rem;
-}
-.texto5 {
-	@include texto;
-	height: 12rem;
-}
-.texto6 {
-	@include texto;
-	height: 12rem;
-}
-.texto7 {
-	@include texto;
-	height: 18rem;
-}
-.texto8 {
-	@include texto;
-	height: 15rem;
-}
-
-.informacion {
-	@extend %informacion;
-}
-.formulario {
-	@extend %formulario;
-}
-
-main {
-	article {
-		p {
+	article {		
+		.mih3 {
+			@extend %haches;
+			color: $resalta-letra;
+			font-size: 1.5rem;
+			font-size: 2rem;
+		}		
+		.boton {
+			@extend %boton;
+		}		
+		.t1p2 {
+			display: none;
+		}		
+		.t1p3 {
+			display: none;
+		}
+		p {			
 			span {
 				color: $resalta-letra;
 				font-weight: bold;
 			}
 		}
+	}	
+	section {		
+		img {
+			@include size-imagenes(560px, 320px);
+			margin-left: 1.1rem;
+			margin-top: 2rem;
+			border-radius: 20px;
+		}
+		div {
+			div {
+				div {					
+					img {
+						@include size-imagenes(700px, 400px);
+						margin-left: 1.5rem;
+						margin-bottom: 2rem;
+						border-radius: 20px;
+					}
+				}
+			}
+		}		
+		.boton {
+			@extend %boton;
+		}
+	}	
+	.boton {
+		&:hover {
+			transition: 0.5s;
+			color: #FFF;
+			background-color: $verde-fuerte;
+		}
+	}	
+	.texto1 {		
+		@include size-texto(560px, 230px);
+	}	
+	.texto2 {
+		@include size-texto(560px, 200px);
+		margin-bottom: 1rem;
+	}	
+	.texto3 {
+		@include size-texto(560px, 200px);
+		margin-bottom: 1rem;
+	}	
+	.texto4 {
+		@include size-texto(560px, 200px);
+		margin-bottom: 1rem;
+	}	
+	.texto5 {
+		@include size-texto(560px, 200px);
+	}	
+	.texto6 {
+		@include size-texto(560px, 200px);
+	}	
+	.texto7 {
+		@include size-texto(560px, 300px);
+	}	
+	.texto8 {
+		@include size-texto(560px, 240px);		
+	}	
+	.informacion {
+		@include size-informacion(400px, 400px);
+	}	
+	.formulario {
+		@include size-formulario(400px, 530px);
 	}
 }
+
 @import "utilities/footerMovil";

@@ -1,53 +1,115 @@
-@media screen and (min-width: 640px) {
+@import "utilities/variables";
+@import "utilities/mixins";
 
-	@import "utilities/headerDesk.scss";
-	
-	main {
-		display: grid;
-		grid-template-columns: 0.5fr 0.5fr;
-		grid-template-rows: 0.1fr 0.1fr 0.1fr;
-		grid-template-areas: "mih2 mih2" "img11 texto8" "informacion formulario";
-		.mih2 {
-			grid-area: mih2;
-		}
-		.img11 {
-			grid-area: img11;
-			margin-left: 10rem;
-		}
-		.texto8 {
-			grid-area: texto8;
-			margin: 0rem;
-		}
-		.informacion {
-			grid-area: informacion;
-			margin-left: 18rem;
-			font-size: 1.4rem;
-			height: 35rem;
-		}
-		.formulario {
-			grid-area: formulario;
-			margin-bottom: 2rem;
-			margin-right: 20rem;
-			padding-left: 0rem;
-			padding-right: 0rem;
-		}
-	}
-	section {
-		img {
-			width: 35rem;
-			height: 20rem;
-			margin-left: 3rem;
-		}
-	}
-	.mih1 {
-		font-size: 6rem;
-	}
-	.mih2 {
-		font-size: 5rem;
-	}
-	.mih3 {
-		font-size: 3rem;
-	}
+@media screen and (min-width: 993px){
 
-	@import "utilities/footerDesk.scss";
+    @import "utilities/headerDesk";
+
+    main {
+        display: grid;
+        justify-content: space-between;
+        padding-left: 1.5rem;
+        grid-template-columns: 0.5fr 0.5fr;
+        grid-template-rows: 0.1fr 0.1fr 0.1fr;
+        grid-template-areas: "mih2 mih2" "img11 texto8" "informacion formulario";
+        .mih2 {
+            grid-area: mih2;
+            font-size: 5rem;
+        }
+        .img11 {
+            grid-area: img11;
+            margin-left: 15rem;
+        }
+        .texto8 {
+            grid-area: texto8;
+            margin-left: 2rem;
+        }
+        .informacion {
+            grid-area: informacion;
+            @include size-informacion(620px, 540px);
+            margin-left: 16rem;
+            font-size: 1.4rem;            
+            padding-top: 5rem;
+            margin-top: 3rem;
+            border: 1px solid black;
+        }
+        .formulario {
+            grid-area: formulario;
+            margin-bottom: 2rem;
+            margin-right: 25rem;
+            margin-top: 3rem;
+            margin-left: 7rem;
+        }
+        section {
+            img {
+                @include size-imagenes(560px, 320px);
+                margin-left: 3rem;
+            }
+        }
+        article {
+            .mih3 {
+                font-size: 3rem;
+            }
+        }
+        
+    }
+
+    @import "utilities/footerDesk";
+}
+
+@media (min-width: 768px) and (max-width: 992px){
+
+    @import "utilities/headerTablet";
+
+    main {
+        display: grid;
+        grid-template-columns: 0.5fr 0.5fr;
+        grid-template-rows: 0.1fr 0.1fr 0.1fr;
+        grid-template-areas: "mih2 mih2" "img11 texto8" "informacion formulario";
+        .mih2 {
+            grid-area: mih2;
+            font-size: 4rem;
+            margin-right: 18rem;
+        }
+        .img11 {
+            grid-area: img11;
+            margin-left: 5rem;
+        }
+        .texto8 {
+            grid-area: texto8;
+            @include size-texto(350px, 200px);
+            margin-left: 2rem;            
+            font-size: 0.8rem;
+        }
+        .informacion {
+            grid-area: informacion;
+            @include size-informacion(400px, 540px);
+            margin-left: 8rem;
+            font-size: 1.1rem;            
+            padding-top: 5rem;
+            margin-top: 3rem;
+            border: 1px solid black;
+        }
+        .formulario {
+            grid-area: formulario;
+            margin-bottom: 2rem;
+            margin-right: 25rem;
+            margin-top: 3rem;
+            margin-left: 2rem;
+        }
+        article {
+            .mih3 {
+                font-size: 2rem;
+            }
+        }
+        section {
+            img {
+                @include size-imagenes(400px, 250px);
+                margin-top: 3rem;
+                margin-left: 3rem;
+            }
+        }        
+    }
+
+    @import "utilities/footerTablet";
 }

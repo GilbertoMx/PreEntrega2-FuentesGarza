@@ -1,27 +1,29 @@
 header {
 	display: flex;
 	background-color: $verde-claro;
-	nav {
-		margin-left: 10rem;
-		ul {
-			li {
-				a {
-					&:hover {
-						@extend %enlacehover;
+	overflow-x: hidden;
+	div {		
+		nav {
+			margin-left: 10rem;
+			div {
+				div {
+					ul {
+						li {
+							a {								
+								&:hover {
+									@extend %enlacehover;
+								}
+							}
+						}
 					}
+				}				
+				.mih1 {
+					@extend %h1header;					
 				}
 			}
+		}		
+		.logo-hotel {
+			display: none;
 		}
 	}
-}
-
-.logo-hotel {
-	display: none;
-}
-
-.mih1 {
-	color: $verde-fuerte;
-	text-align: center;
-	font-size: 2.5rem;
-	font-family: $fuente-bn;
 }

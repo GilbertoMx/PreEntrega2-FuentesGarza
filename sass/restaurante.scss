@@ -1,56 +1,122 @@
-@media screen and (min-width: 640px) {
+@import "utilities/variables";
+@import "utilities/mixins";
 
-	@import "utilities/headerDesk";
-	
-	main {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 0.2fr 0.2fr 0.2fr;
-		grid-template-areas: "mih2 mih2" "img10 texto7" "informacion formulario";
-		padding-left: 1.5rem;
-		justify-content: space-between;
-		.mih2 {
-			grid-area: mih2;
-		}
-		.texto7 {
-			grid-area: texto7;
-		}
-		.img10 {
-			grid-area: img10;
-		}
-		.informacion {
-			grid-area: informacion;
-			margin-left: 15rem;
-			font-size: 1.4rem;
-			height: 35rem;
-		}
-		.formulario {
-			grid-area: formulario;
-			margin-bottom: 2rem;
-			margin-right: 20rem;
-			padding-left: 0rem;
-			padding-right: 0rem;
-		}
-		.boton {
-			margin-left: 1.8rem;
-		}
-	}
-	section {
-		img {
-			width: 40rem;
-			height: 20rem;
-			margin-left: 10rem;
-		}
-	}
-	.mih1 {
-		font-size: 6rem;
-	}
-	.mih2 {
-		font-size: 5rem;
-	}
-	.mih3 {
-		font-size: 3rem;
-	}
+@media screen and (min-width: 993px){
 
-	@import "utilities/headerDesk";
+    @import "utilities/headerDesk";
+
+    main {
+        display: grid;
+        justify-content: space-between;
+        padding-left: 1.5rem;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.2fr 0.2fr 0.2fr;
+        grid-template-areas: "mih2 mih2" "img10 texto7" "informacion formulario";
+        .mih2 {
+            grid-area: mih2;
+            font-size: 5rem;
+        }
+        .texto7 {
+            grid-area: texto7;
+            margin-left: 2rem;
+        }
+        .img10 {
+            grid-area: img10;
+        }
+        .informacion {
+            grid-area: informacion;
+            @include size-informacion(640px, 540px);
+            margin-left: 10rem;
+            font-size: 1.4rem;            
+            padding-top: 5rem;
+            margin-top: 3rem;
+            border: 1px solid black;
+        }
+        .formulario {
+            grid-area: formulario;
+            margin-bottom: 2rem;
+            margin-right: 25rem;
+            margin-top: 3rem;
+            margin-left: 5rem;
+        }
+        section {
+            img {
+                @include size-imagenes(640px, 320px);                
+                margin-left: 10rem;
+            }
+        }
+        .boton {
+            margin-left: 1.8rem;
+        }
+        article {
+            .mih3 {
+                font-size: 3rem;
+            }
+        }
+    }
+
+    @import "utilities/footerDesk";
+}
+
+@media (min-width: 768px) and (max-width: 992px){
+
+    @import "utilities/headerTablet";
+
+    main {
+        display: grid;
+        justify-content: space-between;
+        padding-left: 1.5rem;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.2fr 0.2fr 0.2fr;
+        grid-template-areas: "mih2 mih2" "img10 texto7" "informacion formulario";
+        .mih2 {
+            grid-area: mih2;
+            font-size: 4rem;
+            margin-right: 15rem;
+        }
+        .texto7 {
+            grid-area: texto7;
+            @include size-texto(400px, 200px);
+            margin-left: 2rem;
+            font-size: 0.8rem;            
+        }
+        .img10 {
+            grid-area: img10;
+        }
+        article {
+            .mih3 {
+                font-size: 2rem;
+            }
+            .t7p2 {
+                display: none;
+            }
+        }
+        section {
+            img {
+                @include size-imagenes(400px, 250px);                
+                margin-left: 5rem;
+            }
+        }
+        .boton {
+            margin-left: 1rem;
+        }
+        .informacion {
+            grid-area: informacion;
+            @include size-informacion(400px, 540px);
+            margin-left: 5rem;
+            font-size: 1.1rem;            
+            padding-top: 5rem;
+            margin-top: 3rem;
+            border: 1px solid black;
+        }
+        .formulario {
+            grid-area: formulario;
+            margin-bottom: 2rem;
+            margin-right: 20rem;
+            margin-top: 3rem;
+            margin-left: 2rem;
+        }
+    }  
+
+    @import "utilities/footerTablet";
 }

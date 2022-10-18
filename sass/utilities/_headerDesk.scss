@@ -1,18 +1,28 @@
-.logo-hotel {
-		display: block;
-		width: 6rem;
-		height: 6rem;
-		border-radius: 30px;
-		margin: 0.5rem;
-		margin-top: 2rem;
-	}
-	header {
+header {
+	div {
+		.logo-hotel {
+			display: block;
+			position: absolute;
+			width: 100px;
+			height: 100px;
+			border-radius: 30px;
+			margin: 0.5rem;
+			margin-top: 1.5rem;
+		}
 		nav {
-			h1 {
-				margin-left: 10rem;
-			}
-			ul {
-				margin-left: 15rem;
+			div {		
+				h1 {
+					margin-left: 10rem;
+				}
+				div {				
+					ul {
+						margin-left: 15rem;
+					}
+				}				
+				.mih1 {
+					font-size: 6rem;
+				}
 			}
 		}
 	}
+}

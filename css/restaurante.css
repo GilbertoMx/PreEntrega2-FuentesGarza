@@ -1,59 +1,169 @@
-@media screen and (min-width: 640px) {
-  .logo-hotel {
+@media screen and (min-width: 993px) {
+  header div .logo-hotel {
     display: block;
-    width: 6rem;
-    height: 6rem;
+    position: absolute;
+    width: 100px;
+    height: 100px;
     border-radius: 30px;
     margin: 0.5rem;
-    margin-top: 2rem; }
-  header nav h1 {
+    margin-top: 1.5rem; }
+  header div nav div h1 {
     margin-left: 10rem; }
-  header nav ul {
+  header div nav div div ul {
     margin-left: 15rem; }
+  header div nav div .mih1 {
+    font-size: 6rem; }
   main {
     display: grid;
+    justify-content: space-between;
+    padding-left: 1.5rem;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 0.2fr 0.2fr 0.2fr;
-    grid-template-areas: "mih2 mih2" "img10 texto7" "informacion formulario";
-    padding-left: 1.5rem;
-    justify-content: space-between; }
+    grid-template-areas: "mih2 mih2" "img10 texto7" "informacion formulario"; }
     main .mih2 {
-      grid-area: mih2; }
+      grid-area: mih2;
+      font-size: 5rem; }
     main .texto7 {
-      grid-area: texto7; }
+      grid-area: texto7;
+      margin-left: 2rem; }
     main .img10 {
       grid-area: img10; }
     main .informacion {
       grid-area: informacion;
-      margin-left: 15rem;
+      font-family: "Bebas Neue", cursive;
+      text-align: center;
+      width: 640px;
+      height: 540px;
+      font-size: 1rem;
+      margin-bottom: 2rem;
+      padding-top: 3rem;
+      padding-bottom: 2rem;
+      border-radius: 20px;
+      background-color: #B1D7B4;
+      margin-left: 10rem;
       font-size: 1.4rem;
-      height: 35rem; }
+      padding-top: 5rem;
+      margin-top: 3rem;
+      border: 1px solid black; }
+    main .formulario {
+      grid-area: formulario;
+      margin-bottom: 2rem;
+      margin-right: 25rem;
+      margin-top: 3rem;
+      margin-left: 5rem; }
+    main section img {
+      width: 640px;
+      height: 320px;
+      margin-left: 1rem;
+      margin-top: 2rem;
+      margin-left: 10rem; }
+    main .boton {
+      margin-left: 1.8rem; }
+    main article .mih3 {
+      font-size: 3rem; }
+  footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr 1fr;
+    grid-template-areas: "iconos subscripcion" "mih4 mih4"; }
+    footer .iconos {
+      grid-area: iconos;
+      margin-left: 10rem; }
+    footer .subscripcion {
+      grid-area: subscripcion;
+      margin: 0.5rem 0.5rem;
+      font-size: 0.9rem; }
+      footer .subscripcion legend {
+        font-weight: bold;
+        font-size: 1rem; }
+    footer .mih4 {
+      grid-area: mih4;
+      display: block;
+      text-align: center;
+      font-size: 15px;
+      font-family: 'Playfair Display', serif; } }
+
+@media (min-width: 768px) and (max-width: 992px) {
+  header div nav {
+    margin-left: 15rem; }
+    header div nav div .mih1 {
+      font-size: 4rem; }
+  main {
+    display: grid;
+    justify-content: space-between;
+    padding-left: 1.5rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.2fr 0.2fr 0.2fr;
+    grid-template-areas: "mih2 mih2" "img10 texto7" "informacion formulario"; }
+    main .mih2 {
+      grid-area: mih2;
+      font-size: 4rem;
+      margin-right: 15rem; }
+    main .texto7 {
+      grid-area: texto7;
+      font-family: "Playfair Display", serif;
+      text-align: justify;
+      font-size: 1rem;
+      width: 400px;
+      height: 200px;
+      margin-left: 2rem;
+      font-size: 0.8rem; }
+    main .img10 {
+      grid-area: img10; }
+    main article .mih3 {
+      font-size: 2rem; }
+    main article .t7p2 {
+      display: none; }
+    main section img {
+      width: 400px;
+      height: 250px;
+      margin-left: 1rem;
+      margin-top: 2rem;
+      margin-left: 5rem; }
+    main .boton {
+      margin-left: 1rem; }
+    main .informacion {
+      grid-area: informacion;
+      font-family: "Bebas Neue", cursive;
+      text-align: center;
+      width: 400px;
+      height: 540px;
+      font-size: 1rem;
+      margin-bottom: 2rem;
+      padding-top: 3rem;
+      padding-bottom: 2rem;
+      border-radius: 20px;
+      background-color: #B1D7B4;
+      margin-left: 5rem;
+      font-size: 1.1rem;
+      padding-top: 5rem;
+      margin-top: 3rem;
+      border: 1px solid black; }
     main .formulario {
       grid-area: formulario;
       margin-bottom: 2rem;
       margin-right: 20rem;
-      padding-left: 0rem;
-      padding-right: 0rem; }
-    main .boton {
-      margin-left: 1.8rem; }
-  section img {
-    width: 40rem;
-    height: 20rem;
-    margin-left: 10rem; }
-  .mih1 {
-    font-size: 6rem; }
-  .mih2 {
-    font-size: 5rem; }
-  .mih3 {
-    font-size: 3rem; }
-  .logo-hotel {
-    display: block;
-    width: 6rem;
-    height: 6rem;
-    border-radius: 30px;
-    margin: 0.5rem;
-    margin-top: 2rem; }
-  header nav h1 {
-    margin-left: 10rem; }
-  header nav ul {
-    margin-left: 15rem; } }
+      margin-top: 3rem;
+      margin-left: 2rem; }
+  footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr 1fr;
+    grid-template-areas: "iconos subscripcion" "mih4 mih4"; }
+    footer .iconos {
+      grid-area: iconos;
+      margin-left: 4rem; }
+    footer .subscripcion {
+      grid-area: subscripcion;
+      margin: 0.5rem 0.5rem;
+      font-size: 0.9rem; }
+      footer .subscripcion legend {
+        font-family: 'Playfair Display', serif;
+        font-weight: bold;
+        font-size: 1rem; }
+    footer .mih4 {
+      grid-area: mih4;
+      display: block;
+      text-align: center;
+      font-size: 15px;
+      font-family: 'Playfair Display', serif; } }

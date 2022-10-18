@@ -1,45 +1,91 @@
-section {
-	img {
-		width: 35rem;
-		height: 20rem;
-		padding-bottom: 2rem;
-	}
+@import "utilities/variables";
+@import "utilities/mixins";
+
+@media screen and (min-width: 993px){
+
+    @import "utilities/headerDesk";
+
+    main {
+        display: grid;
+        justify-content: space-between;
+        padding-left: 1.5rem;
+        grid-template-columns: 2fr;
+        grid-template-rows: 0.1fr 0.1fr 0.1fr;
+        grid-template-areas: "mih2" "mih3" "section-img";
+        .mih2 {
+            grid-area: mih2;
+            font-size: 5rem;
+        }
+        .mih3 {
+            grid-area: mih3;
+        }
+        .section-img {
+            grid-area: section-img;
+            padding-left: 0.7rem;
+        }
+        section {
+            div {
+                div {
+                    div {
+                        img {
+                            @include size-imagenes(1760px, 800px);
+                            margin-left: 5rem;                            
+                            margin-bottom: 5rem;
+                        }
+                    }
+                }
+            }
+        }
+        article {
+            .mih3 {
+                font-size: 3rem;
+            }
+        }
+    }
+
+    @import "utilities/footerDesk";
 }
 
-@media screen and (min-width: 640px) {
 
-	@import "utilities/headerDesk";
-	
-	main {
-		display: grid;
-		grid-template-columns: 2fr;
-		grid-template-rows: 0.1fr 0.1fr 0.1fr;
-		grid-template-areas: "mih2" "mih3" "section-img";
-		.mih2 {
-			grid-area: mih2;
-		}
-		.section-img {
-			grid-area: section-img;
-			padding-left: 0.7rem;
-		}
-	}
-	section {
-		img {
-			margin-left: 5rem;
-			width: 107rem;
-			height: 50rem;
-		}
-	}
-	.mih1 {
-		font-size: 6rem;
-	}
-	.mih2 {
-		font-size: 5rem;
-	}
-	.mih3 {
-		font-size: 3rem;
-	}
+@media (min-width: 768px) and (max-width: 992px){
 
-	@import "utilities/footerDesk";
+    @import "utilities/headerTablet";
+
+    main {
+        display: grid;
+        grid-template-columns: 2fr;
+        grid-template-rows: 0.1fr 0.1fr 0.1fr;
+        grid-template-areas: "mih2" "mih3" "section-img";
+        .mih2 {
+            grid-area: mih2;
+            font-size: 4rem;
+        }
+        .mih3 {
+            grid-area: mih3;
+        }
+        .section-img {
+            grid-area: section-img;
+            padding-left: 0.7rem;
+        }
+        article {
+            .mih3 {
+                font-size: 2rem;
+            }
+        }
+        section {
+            div {
+                div {
+                    div {
+                        img {
+                            @include size-imagenes(880px, 640px);
+                            margin-left: 3rem;                            
+                            margin-bottom: 5rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @import "utilities/footerTablet";
 }
-

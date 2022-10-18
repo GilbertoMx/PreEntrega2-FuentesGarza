@@ -1,6 +1,3 @@
-@charset "UTF-8";
-/* Paleta de colores del proyecto */
-/* Estilos de Fuentes */
 * {
   margin: 0;
   padding: 0;
@@ -13,24 +10,28 @@ body {
   background-color: #000;
   overflow-x: hidden; }
 
-/* estilos generales del texto */
-/* estilos generales de la clase boton */
-main .boton {
+main article .boton, main section .boton {
   padding: 0.5rem;
-  color: #000;
+  color: black;
   background-color: #B1D7B4;
-  box-shadow: 2px 2px 2px #000;
+  box-shadow: 2px 2px 2px black;
   font-weight: bold;
   letter-spacing: 0.2rem;
   text-align: center;
   border-radius: 10px;
-  width: 15rem;
+  width: 240px;
   margin: 0 auto;
   margin-top: 1rem;
-  margin-bottom: 1rem; }
+  margin-bottom: 1rem;
+  font-family: "Bebas Neue", cursive; }
 
-/* estilos generales del enlace hover */
-header nav ul li a:hover {
+main .mih2, main article .mih3 {
+  text-align: center;
+  font-size: 2rem;
+  font-family: "Bebas Neue", cursive;
+  margin: 1rem; }
+
+header div nav div div ul li a:hover {
   text-align: left;
   transition: 0.5s;
   color: #FFF;
@@ -39,162 +40,152 @@ header nav ul li a:hover {
   font-weight: bold;
   box-shadow: 1px 1px #000; }
 
-/* estilos generales de h2 y h3 */
-.mih2, .mih3 {
-  text-align: center;
-  font-size: 2rem;
-  font-family: "Bebas Neue", cursive;
-  margin: 1rem; }
-
-/* estilos generales del texto de información */
-.informacion {
-  font-family: "Bebas Neue", cursive;
-  text-align: center;
-  width: 25rem;
-  height: 25rem;
-  font-size: 1rem;
-  margin-bottom: 2rem;
-  padding-top: 3rem;
-  padding-bottom: 2rem;
-  border-radius: 20px;
-  background-color: #B1D7B4; }
-
-/* estilos generales del formulario */
-.formulario {
-  padding-left: 2rem;
-  padding-right: 2rem;
-  margin-bottom: 2rem;
-  text-align: center;
-  border: 4px double #000;
-  border-radius: 20px; }
-
-/* estilos generales del las imagenes */
-section img {
-  width: 30rem;
-  height: 20rem;
-  margin-left: 1rem;
-  margin-top: 2rem; }
-
-header {
-  display: flex;
-  background-color: #B1D7B4; }
-  header nav {
-    margin-left: 10rem; }
-
-.logo-hotel {
-  display: none; }
-
-.mih1 {
+header div nav div .mih1 {
   color: #1C6758;
   text-align: center;
   font-size: 2.5rem;
-  font-family: "Bebas Neue", cursive; }
+  font-family: "Bebas Neue", cursive;
+  font-size: 3rem; }
+
+header {
+  display: flex;
+  background-color: #B1D7B4;
+  overflow-x: hidden; }
+  header div nav {
+    margin-left: 10rem; }
+  header div .logo-hotel {
+    display: none; }
 
 main {
   display: flex;
   flex-direction: column;
   align-items: center;
   flex-wrap: wrap;
-  background-color: #F7F6DC; }
+  background-color: #F7F6DC;
+  overflow-x: hidden; }
+  main div iframe {
+    width: 500px;
+    height: 300px;
+    border-radius: 20px; }
+  main .mih2 {
+    font-size: 4rem; }
+  main article .mih3 {
+    color: #EF5B0C;
+    font-size: 1.5rem;
+    font-size: 2rem; }
+  main article .t1p2 {
+    display: none; }
+  main article .t1p3 {
+    display: none; }
+  main article p span {
+    color: #EF5B0C;
+    font-weight: bold; }
+  main section img {
+    width: 560px;
+    height: 320px;
+    margin-left: 1rem;
+    margin-top: 2rem;
+    margin-left: 1.1rem;
+    margin-top: 2rem;
+    border-radius: 20px; }
+  main section div div div img {
+    width: 700px;
+    height: 400px;
+    margin-left: 1rem;
+    margin-top: 2rem;
+    margin-left: 1.5rem;
+    margin-bottom: 2rem;
+    border-radius: 20px; }
   main .boton:hover {
     transition: 0.5s;
     color: #FFF;
     background-color: #1C6758; }
+  main .texto1 {
+    font-family: "Playfair Display", serif;
+    text-align: justify;
+    font-size: 1rem;
+    width: 560px;
+    height: 230px; }
+  main .texto2 {
+    font-family: "Playfair Display", serif;
+    text-align: justify;
+    font-size: 1rem;
+    width: 560px;
+    height: 200px;
+    margin-bottom: 1rem; }
+  main .texto3 {
+    font-family: "Playfair Display", serif;
+    text-align: justify;
+    font-size: 1rem;
+    width: 560px;
+    height: 200px;
+    margin-bottom: 1rem; }
+  main .texto4 {
+    font-family: "Playfair Display", serif;
+    text-align: justify;
+    font-size: 1rem;
+    width: 560px;
+    height: 200px;
+    margin-bottom: 1rem; }
+  main .texto5 {
+    font-family: "Playfair Display", serif;
+    text-align: justify;
+    font-size: 1rem;
+    width: 560px;
+    height: 200px; }
+  main .texto6 {
+    font-family: "Playfair Display", serif;
+    text-align: justify;
+    font-size: 1rem;
+    width: 560px;
+    height: 200px; }
+  main .texto7 {
+    font-family: "Playfair Display", serif;
+    text-align: justify;
+    font-size: 1rem;
+    width: 560px;
+    height: 300px; }
+  main .texto8 {
+    font-family: "Playfair Display", serif;
+    text-align: justify;
+    font-size: 1rem;
+    width: 560px;
+    height: 240px; }
+  main .informacion {
+    font-family: "Bebas Neue", cursive;
+    text-align: center;
+    width: 400px;
+    height: 400px;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    border-radius: 20px;
+    background-color: #B1D7B4; }
+  main .formulario {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    border: 4px double #000;
+    border-radius: 20px;
+    width: 400px;
+    height: 530px; }
 
-.video1 {
-  width: 35rem;
-  height: 20rem;
-  margin-right: 1.4rem; }
-
-.mih3 {
-  color: #EF5B0C;
-  font-size: 1.5rem; }
-
-.texto1 {
-  font-family: "Playfair Display", serif;
-  text-align: justify;
-  width: 35rem;
-  height: 27rem;
-  font-size: 1rem;
-  margin-bottom: 3rem; }
-
-.texto2 {
-  font-family: "Playfair Display", serif;
-  text-align: justify;
-  width: 35rem;
-  height: 27rem;
-  font-size: 1rem;
-  height: 12rem;
-  margin-bottom: 1rem; }
-
-.texto3 {
-  font-family: "Playfair Display", serif;
-  text-align: justify;
-  width: 35rem;
-  height: 27rem;
-  font-size: 1rem;
-  height: 12rem;
-  margin-bottom: 1rem; }
-
-.texto4 {
-  font-family: "Playfair Display", serif;
-  text-align: justify;
-  width: 35rem;
-  height: 27rem;
-  font-size: 1rem;
-  height: 12rem;
-  margin-bottom: 1rem; }
-
-.texto5 {
-  font-family: "Playfair Display", serif;
-  text-align: justify;
-  width: 35rem;
-  height: 27rem;
-  font-size: 1rem;
-  height: 12rem; }
-
-.texto6 {
-  font-family: "Playfair Display", serif;
-  text-align: justify;
-  width: 35rem;
-  height: 27rem;
-  font-size: 1rem;
-  height: 12rem; }
-
-.texto7 {
-  font-family: "Playfair Display", serif;
-  text-align: justify;
-  width: 35rem;
-  height: 27rem;
-  font-size: 1rem;
-  height: 18rem; }
-
-.texto8 {
-  font-family: "Playfair Display", serif;
-  text-align: justify;
-  width: 35rem;
-  height: 27rem;
-  font-size: 1rem;
-  height: 15rem; }
-
-main article p span {
-  color: #EF5B0C;
-  font-weight: bold; }
-
-/* estilos generales del footer */
 footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #FFC090;
-  /* estilos del los iconos del footer */
-  /* estilos de la subscripcion del footer */
-  /* estilos parrafos del footer */ }
+  background-color: #FFC090; }
   footer .iconos {
     padding: 1rem; }
   footer .subscripcion {
     padding: 1rem;
     border-radius: 20px;
     border: 1px solid #000; }
+    footer .subscripcion legend {
+      font-family: "Playfair Display", serif;
+      font-weight: bold;
+      font-size: 1rem; }
   footer .mih4 {
     display: none; }

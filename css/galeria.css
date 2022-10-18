@@ -1,52 +1,105 @@
-section img {
-  width: 35rem;
-  height: 20rem;
-  padding-bottom: 2rem; }
-
-@media screen and (min-width: 640px) {
-  .logo-hotel {
+@media screen and (min-width: 993px) {
+  header div .logo-hotel {
     display: block;
-    width: 6rem;
-    height: 6rem;
+    position: absolute;
+    width: 100px;
+    height: 100px;
     border-radius: 30px;
     margin: 0.5rem;
-    margin-top: 2rem; }
-  header nav h1 {
+    margin-top: 1.5rem; }
+  header div nav div h1 {
     margin-left: 10rem; }
-  header nav ul {
+  header div nav div div ul {
     margin-left: 15rem; }
+  header div nav div .mih1 {
+    font-size: 6rem; }
   main {
     display: grid;
+    justify-content: space-between;
+    padding-left: 1.5rem;
     grid-template-columns: 2fr;
     grid-template-rows: 0.1fr 0.1fr 0.1fr;
     grid-template-areas: "mih2" "mih3" "section-img"; }
     main .mih2 {
-      grid-area: mih2; }
+      grid-area: mih2;
+      font-size: 5rem; }
+    main .mih3 {
+      grid-area: mih3; }
     main .section-img {
       grid-area: section-img;
       padding-left: 0.7rem; }
-  section img {
-    margin-left: 5rem;
-    width: 107rem;
-    height: 50rem; }
-  .mih1 {
-    font-size: 6rem; }
-  .mih2 {
-    font-size: 5rem; }
-  .mih3 {
-    font-size: 3rem; }
+    main section div div div img {
+      width: 1760px;
+      height: 800px;
+      margin-left: 1rem;
+      margin-top: 2rem;
+      margin-left: 5rem;
+      margin-bottom: 5rem; }
+    main article .mih3 {
+      font-size: 3rem; }
   footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 2fr 1fr;
     grid-template-areas: "iconos subscripcion" "mih4 mih4"; }
     footer .iconos {
-      grid-area: iconos; }
+      grid-area: iconos;
+      margin-left: 10rem; }
     footer .subscripcion {
       grid-area: subscripcion;
       margin: 0.5rem 0.5rem;
       font-size: 0.9rem; }
       footer .subscripcion legend {
+        font-weight: bold;
+        font-size: 1rem; }
+    footer .mih4 {
+      grid-area: mih4;
+      display: block;
+      text-align: center;
+      font-size: 15px;
+      font-family: 'Playfair Display', serif; } }
+
+@media (min-width: 768px) and (max-width: 992px) {
+  header div nav {
+    margin-left: 15rem; }
+    header div nav div .mih1 {
+      font-size: 4rem; }
+  main {
+    display: grid;
+    grid-template-columns: 2fr;
+    grid-template-rows: 0.1fr 0.1fr 0.1fr;
+    grid-template-areas: "mih2" "mih3" "section-img"; }
+    main .mih2 {
+      grid-area: mih2;
+      font-size: 4rem; }
+    main .mih3 {
+      grid-area: mih3; }
+    main .section-img {
+      grid-area: section-img;
+      padding-left: 0.7rem; }
+    main article .mih3 {
+      font-size: 2rem; }
+    main section div div div img {
+      width: 880px;
+      height: 640px;
+      margin-left: 1rem;
+      margin-top: 2rem;
+      margin-left: 3rem;
+      margin-bottom: 5rem; }
+  footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr 1fr;
+    grid-template-areas: "iconos subscripcion" "mih4 mih4"; }
+    footer .iconos {
+      grid-area: iconos;
+      margin-left: 4rem; }
+    footer .subscripcion {
+      grid-area: subscripcion;
+      margin: 0.5rem 0.5rem;
+      font-size: 0.9rem; }
+      footer .subscripcion legend {
+        font-family: 'Playfair Display', serif;
         font-weight: bold;
         font-size: 1rem; }
     footer .mih4 {

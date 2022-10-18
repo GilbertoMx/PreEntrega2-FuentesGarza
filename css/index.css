@@ -1,32 +1,39 @@
-@media screen and (min-width: 640px) {
-  .logo-hotel {
+@media screen and (min-width: 993px) {
+  header div .logo-hotel {
     display: block;
-    width: 6rem;
-    height: 6rem;
+    position: absolute;
+    width: 100px;
+    height: 100px;
     border-radius: 30px;
     margin: 0.5rem;
-    margin-top: 2rem; }
-  header nav h1 {
+    margin-top: 1.5rem; }
+  header div nav div h1 {
     margin-left: 10rem; }
-  header nav ul {
+  header div nav div div ul {
     margin-left: 15rem; }
+  header div nav div .mih1 {
+    font-size: 6rem; }
   main {
     display: grid;
+    justify-content: space-between;
+    padding-left: 1.5rem;
     grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr;
     grid-template-rows: 0.5fr 2fr 1.5fr;
-    grid-template-areas: "mih2 mih2 mih2 mih2" "video1 video1 texto1 texto1" "img1 img2 img3 img4";
-    padding-left: 1.5rem;
-    justify-content: space-between; }
+    grid-template-areas: "mih2 mih2 mih2 mih2" "video1 video1 texto1 texto1" "img1 img2 img3 img4"; }
     main .mih2 {
-      grid-area: mih2; }
+      grid-area: mih2;
+      font-size: 5rem; }
     main .video1 {
       grid-area: video1;
-      margin-right: 0rem;
-      margin-left: 10rem; }
+      margin-left: 10rem;
+      margin-top: 4rem; }
     main .texto1 {
       grid-area: texto1;
-      width: 55rem;
-      height: 25rem; }
+      font-family: "Playfair Display", serif;
+      text-align: justify;
+      font-size: 1rem;
+      width: 800px;
+      height: 400px; }
     main .img1 {
       grid-area: img1; }
     main .img2 {
@@ -35,30 +42,121 @@
       grid-area: img3; }
     main .img4 {
       grid-area: img4; }
-    main .boton {
+    main article .t1p2 {
+      display: block; }
+    main article .t1p3 {
+      display: block; }
+    main article .mih3 {
+      font-size: 3rem; }
+    main div iframe {
+      width: 600px;
+      height: 350px;
+      margin-left: 1rem;
+      margin-top: 2rem; }
+    main section img {
+      width: 400px;
+      height: 240px;
+      margin-left: 1rem;
+      margin-top: 2rem;
+      margin-left: 1.5rem; }
+    main section .boton {
       margin-left: 6rem; }
-  section img {
-    width: 25rem;
-    height: 15rem;
-    margin-left: 1.5rem; }
-  .mih1 {
-    font-size: 6rem; }
-  .mih2 {
-    font-size: 5rem; }
-  .mih3 {
-    font-size: 3rem; }
   footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 2fr 1fr;
     grid-template-areas: "iconos subscripcion" "mih4 mih4"; }
     footer .iconos {
-      grid-area: iconos; }
+      grid-area: iconos;
+      margin-left: 10rem; }
     footer .subscripcion {
       grid-area: subscripcion;
       margin: 0.5rem 0.5rem;
       font-size: 0.9rem; }
       footer .subscripcion legend {
+        font-weight: bold;
+        font-size: 1rem; }
+    footer .mih4 {
+      grid-area: mih4;
+      display: block;
+      text-align: center;
+      font-size: 15px;
+      font-family: 'Playfair Display', serif; } }
+
+@media (min-width: 768px) and (max-width: 992px) {
+  header div nav {
+    margin-left: 15rem; }
+    header div nav div .mih1 {
+      font-size: 4rem; }
+  main {
+    display: grid;
+    justify-content: space-between;
+    padding-left: 1.5rem;
+    grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr;
+    grid-template-rows: 0.5fr 2fr 1.5fr;
+    grid-template-areas: "mih2 mih2 mih2 mih2" "video video texto1 texto1" "img1 img1 img2 img2" "img3 img3 img4 img4"; }
+    main .mih2 {
+      grid-area: mih2;
+      font-size: 4rem; }
+    main video {
+      grid-area: video; }
+    main .texto1 {
+      grid-area: texto1;
+      font-family: "Playfair Display", serif;
+      text-align: justify;
+      font-size: 1rem;
+      width: 500px;
+      height: 350px;
+      font-size: 0.8rem;
+      margin-left: 1rem;
+      margin-right: 1rem;
+      margin-top: 1rem;
+      margin-bottom: 0rem; }
+    main .img1 {
+      grid-area: img1;
+      margin-left: 1rem; }
+    main .img2 {
+      grid-area: img2;
+      margin-left: 5rem; }
+    main .img3 {
+      grid-area: img3;
+      margin-left: 1rem; }
+    main .img4 {
+      grid-area: img4;
+      margin-left: 5rem; }
+    main article .t1p2 {
+      display: block; }
+    main article .t1p3 {
+      display: none; }
+    main article .mih3 {
+      font-size: 2rem; }
+    main div iframe {
+      width: 400px;
+      height: 300px;
+      margin-left: 1rem;
+      margin-top: 2rem; }
+    main section img {
+      width: 400px;
+      height: 250px;
+      margin-left: 1rem;
+      margin-top: 2rem;
+      margin: 0; }
+    main section .boton {
+      margin-left: 5rem; }
+  footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr 1fr;
+    grid-template-areas: "iconos subscripcion" "mih4 mih4"; }
+    footer .iconos {
+      grid-area: iconos;
+      margin-left: 4rem; }
+    footer .subscripcion {
+      grid-area: subscripcion;
+      margin: 0.5rem 0.5rem;
+      font-size: 0.9rem; }
+      footer .subscripcion legend {
+        font-family: 'Playfair Display', serif;
         font-weight: bold;
         font-size: 1rem; }
     footer .mih4 {
